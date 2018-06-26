@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingl.zxs.klapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- 访问一个帐户列表在Accounts Service中 -->
+    <uses-permission android:name="android.permission.READ_PROFILE" /> <!-- 访问用户个人资料 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 允许程序读取用户联系人数据 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- wifi状态权限 -->
+    <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许程序振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许访问闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- android:name设置所有activity属于哪个application的，默认是android.app.Application。 -->
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_home_zhu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.LoginNewActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Activity.ServerUrlActivity" />
+
+        <receiver
+            android:name=".broadcast.StartLoginBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.kingl.zxs.app.START_LOGIN" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.CaptureActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.SaleActivity"></activity>
+    </application>
+
+</manifest>

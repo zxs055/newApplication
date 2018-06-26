@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/app_click_white_grey"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="17.599976dip"
+    android:paddingTop="17.599976dip">
+
+    <ImageView
+        android:id="@+id/gridtupian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/gridtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="9.599976dip"
+        android:textColor="#ff666666"
+        android:textSize="14.0sp" />
+</LinearLayout>

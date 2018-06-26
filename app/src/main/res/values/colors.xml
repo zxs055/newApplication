@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textViewColor_white">#ffffff</color>
+    <color name="color_white_tmb20">#33ffffff</color>
+    <color name="color_black_tmb20">#33000000</color>
+    <color name="color_black_tmb100">#00000000</color>
+    <color name="color_black_tmb80">#C8000000</color>
+    <color name="loginBtn_pressafter">#ff444444</color>
+    <color name="loginBtn_pressbefore">#99444444</color>+
+    <color name="blue">#ff0099ff</color>
+    <color name="blue2">#ffbdcefa</color>
+    <color name="blue3">#ff86ccfb</color>
+    <color name="grey">#ff848587</color>
+    <color name="grey_light">#ffeaebee</color>
+    <color name="grey_mid">#ffd1d1d2</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_laser_trs">#7f86f60e</color>
+    <color name="viewfinder_frame">#ff000000</color>
+</resources>

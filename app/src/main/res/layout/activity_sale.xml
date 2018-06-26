@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kingl.zxs.klapplication.Activity.SaleActivity">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/title_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+    <include
+        layout="@layout/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:id="@+id/main_btntop"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title"
+        android:layout_above="@id/main_btntop"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/textView_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/textView_5"
+                android:text="单号"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textView_18"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/textView_5"
+                android:gravity="center"
+                android:background="@drawable/shape_2"
+                android:hint="输入单号查询"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textView_18"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/viewfinder_laser_trs"
+                android:dividerHeight="@dimen/textView_1"
+                android:listSelector="@color/color_black_tmb100"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

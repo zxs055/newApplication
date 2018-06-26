@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/textView_20"
+        android:orientation="vertical"
+        android:padding="@dimen/textView_10"
+        android:background="@drawable/shape_1">
+
+        <LinearLayout
+            android:id="@+id/input_layout_organization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/company_btn" />
+
+            <TextView
+                android:id="@+id/et_organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textView_12"
+                android:layout_weight="1.0"
+                android:background="@color/color_black_tmb100"
+                android:hint="组织机构"
+                android:padding="@dimen/textView_5"
+                android:textSize="@dimen/textView_16" />
+            <ImageView
+                android:id="@+id/downImgView_organization"
+                android:layout_width="@dimen/textView_20"
+                android:layout_height="@dimen/textView_12"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/textView_10"
+                android:layout_marginRight="@dimen/textView_10"
+                android:background="@mipmap/advance_white_btn" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textView_1"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@color/textViewColor_white"/>
+        <LinearLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/username_btn"/>
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textView_12"
+                android:layout_weight="1"
+                android:background="@color/color_black_tmb100"
+                android:hint="账号/用户名/邮箱"
+                android:padding="@dimen/textView_5"
+                android:textSize="@dimen/textView_16"/>
+            <ImageView
+                android:id="@+id/downImgView_username"
+                android:layout_width="@dimen/textView_20"
+                android:layout_height="@dimen/textView_12"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/textView_10"
+                android:layout_marginRight="@dimen/textView_10"
+                android:background="@mipmap/advance_white_btn"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textView_1"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@color/textViewColor_white"/>
+        <LinearLayout
+            android:id="@+id/input_layout_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/password_btn"/>
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textView_12"
+                android:background="@color/color_black_tmb100"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:padding="@dimen/textView_5"
+                android:textSize="@dimen/textView_16"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textView_1"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@color/textViewColor_white"/>
+
+    </LinearLayout>
+</LinearLayout>

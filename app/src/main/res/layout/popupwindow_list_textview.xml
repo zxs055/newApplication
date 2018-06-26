@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textview_popup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_click_white_grey"
+    android:ellipsize="start"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="10.0dip"
+    android:singleLine="false"
+    android:maxLines="100"
+    android:scrollHorizontally="false"
+    android:textColor="#ff999999"
+    android:textSize="16.0sp" />

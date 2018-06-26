@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--Activity全屏显示-->
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--加载对话框风格使用Logo-->
+    <style name="loading_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!--加载对话框圆形-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="mProg_progressIndeterminate" format="boolean"/>
+        <attr name="mProg_barColor" format="color"/>
+        <attr name="mProg_rimColor" format="color"/>
+        <attr name="mProg_rimWidth" format="dimension"/>
+        <attr name="mProg_spinSpeed" format="float"/>
+        <attr name="mProg_barSpinCycleTime" format="integer"/>
+        <attr name="mProg_circleRadius" format="dimension"/>
+        <attr name="mProg_fillRadius" format="boolean"/>
+        <attr name="mProg_barWidth" format="dimension"/>
+        <attr name="mProg_linearProgress" format="boolean"/>
+        <attr name="mProg_delayMillis" format="integer"/>
+        <attr name="mProg_barLength" format="dimension"/>
+        <attr name="mProg_textSize" format="dimension"/>
+        <attr name="mProg_textColor" format="color"/>
+        <attr name="mProg_text" format="string"/>
+        <attr name="mProg_circleColor" format="color"/>
+        <attr name="mProg_contourSize" format="dimension"/>
+        <attr name="mProg_contourColor" format="color"/>
+    </declare-styleable>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/loginBtn_pressafter</item>
+        <item name="colorControlActivated">@color/viewfinder_frame</item>
+    </style>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/ic_back_zhu"
+    tools:context="com.kingl.zxs.klapplication.Activity.LoginNewActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <include
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/login_layout"></include>
+        <Button
+        android:id="@+id/loginBtn"
+        android:layout_below="@id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/textView_40"
+        android:layout_marginTop="@dimen/textView_20"
+        android:layout_margin="@dimen/textView_20"
+        android:background="@drawable/button_pressed"
+        android:text="登  录"
+        android:textColor="@drawable/button_txtcolor"
+        android:textSize="@dimen/textView_18" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_center"
+        android:layout_marginBottom="@dimen/textView_10"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_home_zhu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/textViewColor_white"
+            android:textSize="@dimen/textView_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_40"
+        android:layout_below="@id/login_center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/system_set_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_set_as" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_8"
+                android:text="系统设置"
+                android:textColor="@color/loginBtn_pressafter" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

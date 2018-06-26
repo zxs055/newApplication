@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_server_url"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kingl.zxs.klapplication.Activity.ServerUrlActivity">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/title_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layout_txt"
+        android:layout_below="@id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_10"
+        android:background="@color/textViewColor_white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/textView_12"
+        android:paddingTop="@dimen/textView_12">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/server_url"/>
+        <EditText
+            android:id="@+id/serverEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="@dimen/textView_10"
+            android:background="@null"
+            android:ellipsize="start"
+            android:hint="@string/set_server_url"
+            android:paddingLeft="@dimen/textView_20"
+            android:textColorHint="@color/color_black_tmb20"
+            android:textSize="@dimen/textView_16"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_server_url_btn"
+        android:layout_below="@id/layout_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/textView_10"
+        android:layout_marginRight="@dimen/textView_10"
+        android:layout_marginTop="@dimen/textView_40"
+        android:background="@drawable/shape_loginbtn_1"
+        android:text="@string/save"
+        android:textColor="@color/textViewColor_white"
+        android:textSize="@dimen/textView_16"/>
+
+</RelativeLayout>
